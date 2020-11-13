@@ -1,0 +1,60 @@
+/*----------------------------------------------------------------
+# Button Style
+----------------------------------------------------------------*/
+.btn-group{
+    
+    .default{
+        background: #3aa138;
+        border: none;
+        color: #ffffff !important;
+        float: left;
+        font-size: 14px;
+        padding: 6px 25px;
+    }
+
+    .price{
+        border-radius: 50px 0 0 50px;
+    }
+
+    .half-btn{
+        border-radius: 0 50px 50px 0;
+        border-left: solid rgba(0,0,0,0.5) 1px;
+    }
+}
+
+.btn-ripple{
+    
+    
+    .ripple{
+        animation: ripple 1s linear infinite;
+        background: #000;
+        border-radius: 50%;
+        position: absolute;
+        pointer-events: none;
+        -webkit-transform: scale(0);
+           -moz-transform: scale(0);
+             -o-transform: scale(0);
+                transform: scale(0);
+    }
+}
+
+.main-btn{
+    background: #ff7d35;
+    border: none;
+    border-radius: 50px;
+    color: #ffffff !important;
+    font-size: 16px;
+    letter-spacing: 1px;
+    overflow: hidden;
+    position: relative;
+    padding: 8px 40px;
+
+    &:focus{
+        outline: none;
+    }
+}
+
+
+
+
+

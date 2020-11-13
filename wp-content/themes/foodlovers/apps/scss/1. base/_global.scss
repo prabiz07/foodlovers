@@ -1,0 +1,94 @@
+/*----------------------------------------------------------------
+# Global CSS
+----------------------------------------------------------------*/
+html{
+    &.no-js{
+        margin-top: 0 !important;
+    }
+}
+
+body#site-body{
+    color: $default-color;
+    font-size: 16px;
+    font-family: 'Cabin', sans-serif;
+    font-weight: normal;
+    margin: 0;
+    padding: 0;
+    -webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	-webkit-overflow-scrolling: touch; /* lets it scroll lazy */
+    text-rendering: optimizeLegibility;
+    
+    &.logged-in{
+        margin-top: 32px;
+
+        #masthead{
+            margin-top: 32px;
+        }
+    }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+    font-family: 'Cabin', sans-serif;
+    font-weight: 500;
+    word-spacing: 0;
+}
+
+ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+img{
+    display: block;
+    max-width: 100%;
+}
+
+p{
+    margin: 0 0 16px;
+}
+
+section{
+    overflow: hidden;
+    position: relative;
+    padding: 100px 0;
+}
+
+a,
+a:visited{
+    text-decoration: none !important;
+    -webkit-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+a:hover,
+a:visited:hover{
+    text-decoration: none !important;
+}
+
+a:focus{
+    outline: none;
+    text-decoration: none;
+}
+
+.ptb-20{
+    padding: 20px 0;
+}
+
+.dotted-bg{
+    background-image: radial-gradient(#ededed 20%, transparent 0), radial-gradient(#ededed 20%, transparent 0);
+    background-size: 3px 3px;
+    background-position: 0 0, 15px 15px;
+    border-bottom-left-radius: 50px;
+    height: 300px;
+    position: absolute;
+    top: 30%;
+    width: 100%;
+}

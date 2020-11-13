@@ -1,0 +1,72 @@
+/*
+Theme Name: Foodlovers
+Theme URI: https://prabizshakya.com.np
+Author: Prabich Raj Shakya
+Author URI: https://prabizshakya.com.np
+Desciption: 
+Version: 1.0.0
+License: GNU General Public License v2 or later
+License URI: LICENSE
+Text Domain: foodlovers
+Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-comments, translation-ready
+*/
+
+
+/*--------------------------------------------------------------
+>>>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+1. Base
+    # Global
+    # wordpress Core
+    # Reset
+    # Typography
+    # Colors
+    # Animation
+2. Layouts
+    # Navigation
+    # Header
+    # Banner
+3. Modules
+    # sidebar
+    # Button
+    # Icon Box
+4. Abstracts
+    # Variables
+    # Mixin
+    # Functions
+5. Vendors
+    # Bootstrap
+    # FontAwesome
+6. Pages
+    # Home
+----------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+1. Base
+----------------------------------------------------------------*/
+@import '1. base/base';
+
+/*--------------------------------------------------------------
+2. Layout
+----------------------------------------------------------------*/
+@import '2. layout/layout';
+
+/*--------------------------------------------------------------
+3. Module
+----------------------------------------------------------------*/
+@import '3. modules/module';
+
+/*--------------------------------------------------------------
+4. Abstract
+----------------------------------------------------------------*/
+@import '4. abstracts/abstract';
+
+/*--------------------------------------------------------------
+5. Vendor
+----------------------------------------------------------------*/
+@import '5. vendors/vendor';
+
+/*--------------------------------------------------------------
+6. Page
+----------------------------------------------------------------*/
+@import '6. page/page';

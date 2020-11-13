@@ -1,0 +1,44 @@
+.site-header{
+    position: relative;
+    padding: 20px 0;
+
+    .site-branding{
+        text-align: center;
+
+        img{
+            height: 80px;
+            width: auto;
+        }
+    }
+
+    .main-navigation{
+        .menu{
+            justify-content: flex-end;
+
+            li{
+                font-size: 16px;
+                font-weight: normal;
+                padding: 0 10px;
+                -webkit-transition: all 0.3s ease-in-out;
+                   -moz-transition: all 0.3s ease-in-out;
+                     -o-transition: all 0.3s ease-in-out;
+                        transition: all 0.3s ease-in-out;
+                a{
+                    color: #26262a;
+                }
+
+                &.current-menu-item{
+                    a{
+                        color: #3ca33a;
+                    }
+                }
+
+                &:hover{
+                    a{
+                        color: #3ca33a;
+                    }
+                }
+            }
+        }
+    }
+}
