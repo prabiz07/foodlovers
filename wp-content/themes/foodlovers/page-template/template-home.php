@@ -37,7 +37,7 @@ Template Name: Home
                         </table>
                         <div class="btn-group">
                             <span class="default price">$ 12</span>
-                            <a href="#" class="default btn-ripple half-btn">View Menu</a>
+                            <a href="#" class="default half-btn">View Menu</a>
                         </div>
                     </div>
                     <div class="banner-content">
@@ -61,7 +61,7 @@ Template Name: Home
                         </table>
                         <div class="btn-group">
                             <span class="default price">$ 6.5</span>
-                            <a href="#" class="default btn-ripple half-btn">View Menu</a>
+                            <a href="#" class="default half-btn">View Menu</a>
                         </div>
                     </div>
                     <div class="banner-content">
@@ -85,14 +85,14 @@ Template Name: Home
                         </table>
                         <div class="btn-group">
                             <span class="default price">$ 18.28</span>
-                            <a href="#" class="default btn-ripple half-btn">View Menu</a>
+                            <a href="#" class="default half-btn">View Menu</a>
                         </div>
                     </div>
                 </div>
                 
             </div>
             <div class="col-5">
-                <div class="colored-bg">
+                <div class="colored-bg stretch-right">
                     <h2 class="banner-title">special</h2>
                 </div>
             </div>
@@ -120,7 +120,84 @@ Template Name: Home
                     <h2 class="title">About Our Company</h2>
                     <p>Health can be tasty. This is the credo by which our friendly community lives.</p>
                     <p>We declare a diet, we eat after 6pm and sometimes miss workouts because we just want to relax at home with our family. We free your time from grocery shopping and cooking so that you can do those things that you enjoy.</p>  
-                    <button href="#" class="main-btn btn-ripple">read more</button>    
+                </div>
+                <a href="#" class="main-btn">read more</a> 
+            </div>
+        </div>
+        <div class="row align-items-center">
+            <div class="selector">
+                <div class="col-3 dis-ib">
+                    <div class="label">
+                        <p class="no-margin">choose a ration for yourself</p>
+                    </div>
+                </div>
+                <div class="col-9 dis-ib">
+                    <form>
+                        <div class="form-row">
+                            <div class="col-md-4">
+                                <select name="custom-select" id="">
+                                    <option value="woman">Woman</option>
+                                    <option value="men">Men</option>
+                                </select>
+                            </div>
+                            <div class="col-md-4">
+                                <select name="custom-select" id="">
+                                    <option value="small">Small</option>
+                                    <option value="medium">Medium</option>
+                                    <option value="large">Large</option>
+                                    <option value="xlarge">Extra Large</option>
+                                </select>
+                            </div>
+                            <div class="col-md-4">
+                                <select name="custom-select" id="">
+                                    <option value="veg">Vegetarian</option>
+                                    <option value="nveg">Non Vegetarian</option>
+                                </select>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="tabs">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <ul class="nav nav-tabs" id="myTab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <a class="nav-link active" id="breakfast-tab" data-toggle="tab" href="#breakfast" role="tab" aria-controls="breakfast" aria-selected="true">
+                            <i class="fas fa-coffee fa-3x"></i>Breakfast
+                        </a>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <a class="nav-link" id="lunch-tab" data-toggle="tab" href="#lunch" role="tab" aria-controls="lunch" aria-selected="false">
+                            <i class="fas fa-pizza-slice fa-3x"></i>Lunch
+                        </a>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <a class="nav-link" id="dinner-tab" data-toggle="tab" href="#dinner" role="tab" aria-controls="dinner" aria-selected="false">
+                            <i class="fas fa-utensils fa-3x"></i>Dinner
+                        </a>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <a class="nav-link" id="snack-tab" data-toggle="tab" href="#snack" role="tab" aria-controls="snack" aria-selected="false">
+                            <i class="fas fa-cookie-bite fa-3x"></i>Snack
+                        </a>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <a class="nav-link" id="drink-tab" data-toggle="tab" href="#drink" role="tab" aria-controls="drink" aria-selected="false">
+                            <i class="fas fa-wine-bottle fa-3x"></i>Drink
+                        </a>
+                    </li>
+                </ul>
+                <div class="tab-content stretch-right" id="myTabContent">
+                    <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="breakfast-tab"></div>
+                    <div class="tab-pane fade" id="dinner" role="tabpanel" aria-labelledby="dinner-tab"></div>
+                    <div class="tab-pane fade" id="snack" role="tabpanel" aria-labelledby="snack-tab"></div>
+                    <div class="tab-pane fade" id="drink" role="tabpanel" aria-labelledby="drink-tab"></div>
                 </div>
             </div>
         </div>

@@ -38,29 +38,29 @@ function prevContentSlide() {
 /*----------------------------------------------------------------
 # Ripple Button JS init
 ----------------------------------------------------------------*/
-function createRipple(event) {
-    const button = event.currentTarget;
+const buttons = document.querySelectorAll('.main-btn');
 
-    const circle = document.createElement("span");
-    const diameter = Math.max(button.clientWidth, button.clientHeight);
-    const radius = diameter / 2;
+buttons.forEach(function (btn) {
+    btn.addEventListener('click', rippleBtn);
+});
 
-    circle.style.width = circle.style.height = `${diameter}px`;
-    circle.style.left = `${event.clientX - button.offsetLeft - radius}px`;
-    circle.style.top = `${event.clientY - button.offsetTop - radius}px`;
-    circle.classList.add("ripple");
+function rippleBtn(e) {
+    const circle = document.createElement('span');
+    circle.className = 'btn-ripple';
+    this.appendChild(circle);
 
-    const ripple = button.getElementsByClassName("ripple")[0];
+    const x = Math.max(this.clientWidth, this.clientHeight);
+    circle.style.width = circle.style.height = x + 'px';
 
-    if (ripple) {
-        ripple.remove();
-    }
+    let rect = this.getBoundingClientRect();
+    circle.style.left = e.clientX - rect.left - x / 2 + 'px';
+    circle.style.top = e.clientY - rect.top - x / 2 + 'px';
 
-    button.appendChild(circle);
+    // Prevent Default
+    e.preventDefault();
 }
 
-const buttons = document.getElementsByTagName("button");
-for (const button of buttons) {
-    button.addEventListener("click", createRipple);
-}
+
+
+
 

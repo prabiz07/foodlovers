@@ -1,0 +1,60 @@
+/*----------------------------------------------------------------
+# Tabs Style
+----------------------------------------------------------------*/
+
+.tabs{
+    padding: 50px 0;
+
+    .nav{
+        border: none;
+        justify-content: center;
+
+        .nav-item{
+            border: none;
+            margin: 0 50px;
+
+            .nav-link{
+                border: none;
+                color: #e1e1e1;
+                position: relative;
+                text-align: center;
+                @include transition(all, 0.3s, ease-in-out);
+
+                &.active,
+                &:hover{
+                    color: #50b04d;
+                }
+
+                &.active{
+                    &:before{
+                        background: url(../img/tooltip.png);
+                        background-repeat: no-repeat;
+                        background-size: cover;
+                        bottom: -45px;
+                        content: '';
+                        height: 40px;
+                        left: 50%;
+                        position: absolute;
+                        text-align: center;
+                        width: 72%;
+                        @include translateX(-50%);
+                    }
+                }
+
+                i{
+                    display: block;
+                }
+            }
+        }
+    }
+
+    .tab-content{
+        background-color: #f5f5f5;
+        border-radius: 50px 0 0 50px;
+        margin-top: 45px;
+        
+        .tab-pane{
+            padding: 60px;
+        }
+    }
+}

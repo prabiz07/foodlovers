@@ -1,0 +1,46 @@
+/*----------------------------------------------------------------
+# Global Mixins
+----------------------------------------------------------------*/
+@mixin animation($animation, $time, $loop){
+    -webkit-animation: $animation $time $loop;
+    -ms-animation: $animation $time $loop;
+    -moz-animation: $animation $time $loop;
+    animation: $animation $time $loop;
+}
+
+@mixin transition($property, $duration, $timing){
+    -webkit-transition: $property $duration $timing;
+       -moz-transition: $property $duration $timing;
+        -ms-transition: $property $duration $timing;
+         -o-transition: $property $duration $timing;
+            transition: $property $duration $timing;
+}
+
+// Browser Prefixes
+@mixin transform($transforms){
+    -webkit-transform: $transforms;
+       -moz-transform: $transforms;
+         -o-transform: $transforms;
+            transform: $transforms;
+}
+
+// translateY
+@mixin translateY ($y) {
+    @include transform(translateY($y));        
+}
+
+// translateX
+@mixin translateX ($x) {
+    @include transform(translateX($x));
+}
+
+// translateXY
+@mixin translateXY ($x, $y) {
+    @include transform(translateXY($x, $y));
+}
+
+// rotate
+@mixin rotate ($deg) {
+    @include transform(rotate(#{$deg}deg));
+}
+
