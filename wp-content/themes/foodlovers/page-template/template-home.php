@@ -194,7 +194,14 @@ Template Name: Home
                     </li>
                 </ul>
                 <div class="tab-content stretch-right" id="myTabContent">
-                    <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="breakfast-tab"></div>
+                    <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="breakfast-tab">
+                        <li class="tab-card">
+                            <img src="" alt="">
+                            <div class="card-content">
+                                
+                            </div>
+                        </li>
+                    </div>
                     <div class="tab-pane fade" id="dinner" role="tabpanel" aria-labelledby="dinner-tab"></div>
                     <div class="tab-pane fade" id="snack" role="tabpanel" aria-labelledby="snack-tab"></div>
                     <div class="tab-pane fade" id="drink" role="tabpanel" aria-labelledby="drink-tab"></div>
