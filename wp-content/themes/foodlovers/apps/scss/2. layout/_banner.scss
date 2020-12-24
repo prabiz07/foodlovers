@@ -114,23 +114,6 @@
             text-transform: uppercase;
         }
 
-        table{
-            margin-bottom: 50px;
-
-            tr{
-                display: inline-block;
-                margin-right: 50px;
-
-                th{
-                    display: block;
-                }
-
-                &:last-child{
-                    margin: 0;
-                }
-            }
-        }
-
         &.active{
             opacity: 1;
         }
@@ -145,8 +128,6 @@
         .banner-title{
             bottom: 25%;
             color: #ffcb5d;
-            font-size: 112px;
-            font-weight: bold;
             left: -40px;
             position: absolute;
             text-transform: uppercase;

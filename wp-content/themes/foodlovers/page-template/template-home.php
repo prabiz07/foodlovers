@@ -93,7 +93,7 @@ Template Name: Home
             </div>
             <div class="col-5">
                 <div class="colored-bg stretch-right">
-                    <h2 class="banner-title">special</h2>
+                    <h2 class="banner-title main-head">special</h2>
                 </div>
             </div>
             <ul class="controls">
@@ -194,11 +194,139 @@ Template Name: Home
                     </li>
                 </ul>
                 <div class="tab-content stretch-right" id="myTabContent">
-                    <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="breakfast-tab">
+                    <div class="tab-pane fade show active" id="breakfast" role="tabpanel" aria-labelledby="breakfast-tab">
                         <li class="tab-card">
-                            <img src="" alt="">
+                            <img src="<?php echo get_template_directory_uri();?>/apps/img/foodplate.png" alt="">
                             <div class="card-content">
-                                
+                                <h3 class="card-title">Salmon with asparagus</h3>
+                                <table class="nutri-fact">
+                                    <tbody>
+                                        <tr>
+                                            <th>Calories</th>
+                                            <td>450 kcal</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Fats</th>
+                                            <td>4.3 gm</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Protein</th>
+                                            <td>6.5 gm</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </li>
+                        <li class="tab-card">
+                            <img src="<?php echo get_template_directory_uri();?>/apps/img/foodplate1.png" alt="">
+                            <div class="card-content">
+                                <h3 class="card-title">Boiled egg with toast</h3>
+                                <table class="nutri-fact">
+                                    <tbody>
+                                        <tr>
+                                            <th>Calories</th>
+                                            <td>80 kcal</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Fats</th>
+                                            <td>2.5 gm</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Protein</th>
+                                            <td>8 gm</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </li>
+                        <li class="tab-card">
+                            <img src="<?php echo get_template_directory_uri();?>/apps/img/foodplate2.png" alt="">
+                            <div class="card-content">
+                                <h3 class="card-title">Mixed veggie salad</h3>
+                                <table class="nutri-fact">
+                                    <tbody>
+                                        <tr>
+                                            <th>Calories</th>
+                                            <td>120 kcal</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Fats</th>
+                                            <td>6.8 gm</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Protein</th>
+                                            <td>16 gm</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </li>
+                        <li class="tab-card">
+                            <img src="<?php echo get_template_directory_uri();?>/apps/img/foodplate.png" alt="">
+                            <div class="card-content">
+                                <h3 class="card-title">Salmon with asparagus</h3>
+                                <table class="nutri-fact">
+                                    <tbody>
+                                        <tr>
+                                            <th>Calories</th>
+                                            <td>450 kcal</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Fats</th>
+                                            <td>4.3 gm</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Protein</th>
+                                            <td>6.5 gm</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </li>
+                    </div>
+                    <div class="tab-pane fade" id="lunch" role="tabpanel" aria-labelledby="lunch-tab">
+                        <li class="tab-card">
+                            <img src="<?php echo get_template_directory_uri();?>/apps/img/lunch.png" alt="">
+                            <div class="card-content">
+                                <h3 class="card-title">Rice Set</h3>
+                                <table class="nutri-fact">
+                                    <tbody>
+                                        <tr>
+                                            <th>Calories</th>
+                                            <td>450 kcal</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Fats</th>
+                                            <td>4.3 gm</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Protein</th>
+                                            <td>6.5 gm</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </li>
+                        <li class="tab-card">
+                            <img src="<?php echo get_template_directory_uri();?>/apps/img/lunch2.png" alt="">
+                            <div class="card-content">
+                                <h3 class="card-title">South Indian Set</h3>
+                                <table class="nutri-fact">
+                                    <tbody>
+                                        <tr>
+                                            <th>Calories</th>
+                                            <td>450 kcal</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Fats</th>
+                                            <td>4.3 gm</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Protein</th>
+                                            <td>6.5 gm</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
                             </div>
                         </li>
                     </div>
@@ -206,6 +334,41 @@ Template Name: Home
                     <div class="tab-pane fade" id="snack" role="tabpanel" aria-labelledby="snack-tab"></div>
                     <div class="tab-pane fade" id="drink" role="tabpanel" aria-labelledby="drink-tab"></div>
                 </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="video content-half">
+    <div class="container">
+        <div class="row align-item-center">
+            <div class="col-4">
+                <div class="content ">
+                        <h2 class="title">You can watch cooking process translation</h2>
+                        <p>Health can be tasty. This is the credo by which our friendly community lives.</p>
+                        <p>We declare a diet, we eat after 6pm and sometimes miss workouts because we just want to relax at home with our family. We free your time from grocery shopping and cooking so that you can do those things that you enjoy.</p>  
+                    </div>
+                    <a href="#" class="main-btn">play video</a>
+                </div>
+            <div class="col-8">
+                <div class="media-wrap">
+                    <img src="<?php echo get_template_directory_uri();?>/apps/img/cooking-demonstration.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="process">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <h2 class="main-head">How it works</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-4">
+                
             </div>
         </div>
     </div>

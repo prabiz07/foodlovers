@@ -1,11 +1,29 @@
 /*----------------------------------------------------------------
 # Content Style
 ----------------------------------------------------------------*/
-.content{
-    font-size: 18px;
+.content-half{
+    .content{
+        font-size: 18px;
+    
+        .title{
+            text-transform: uppercase;
+        }
+    
+        .title,
+        p{
+            margin-bottom: 1.5rem;
+        }
+    }
 
-    .title,
-    p{
-        margin-bottom: 1.5rem;
+    .media-wrap{
+        img{
+            border-radius: 50px;
+        }
+    }
+}
+
+.video{
+    .media-wrap{
+        margin-left: 30px;
     }
 }

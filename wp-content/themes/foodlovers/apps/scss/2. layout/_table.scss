@@ -1,0 +1,16 @@
+.nutri-fact{
+    margin-bottom: 50px;
+
+    tr{
+        display: inline-block;
+        margin-right: 50px;
+
+        th{
+            display: block;
+        }
+
+        &:last-child{
+            margin: 0;
+        }
+    }
+}

@@ -109,7 +109,7 @@ p {
 section {
   overflow: hidden;
   position: relative;
-  padding: 100px 0; }
+  padding: 50px 0; }
 
 a,
 a:visited {
@@ -148,6 +148,11 @@ a:focus {
 .stretch-right {
   margin-right: calc(50% - 50vw);
   position: static; }
+
+.main-head {
+  font-size: 112px;
+  font-weight: bold;
+  text-transform: uppercase; }
 
 /*----------------------------------------------------------------
 # Main Font
@@ -393,15 +398,6 @@ a img.aligncenter {
       font-weight: 600;
       margin-bottom: 35px;
       text-transform: uppercase; }
-    .banner .banner-content table {
-      margin-bottom: 50px; }
-      .banner .banner-content table tr {
-        display: inline-block;
-        margin-right: 50px; }
-        .banner .banner-content table tr th {
-          display: block; }
-        .banner .banner-content table tr:last-child {
-          margin: 0; }
     .banner .banner-content.active {
       opacity: 1; }
   .banner .colored-bg {
@@ -412,8 +408,6 @@ a img.aligncenter {
     .banner .colored-bg .banner-title {
       bottom: 25%;
       color: #ffcb5d;
-      font-size: 112px;
-      font-weight: bold;
       left: -40px;
       position: absolute;
       text-transform: uppercase;
@@ -470,20 +464,19 @@ a img.aligncenter {
 /*----------------------------------------------------------------
 # Content Style
 ----------------------------------------------------------------*/
-.content {
+.content-half .content {
   font-size: 18px; }
-  .content .title,
-  .content p {
+  .content-half .content .title {
+    text-transform: uppercase; }
+  .content-half .content .title,
+  .content-half .content p {
     margin-bottom: 1.5rem; }
 
-/*----------------------------------------------------------------
-# Content Style
-----------------------------------------------------------------*/
-.content {
-  font-size: 18px; }
-  .content .title,
-  .content p {
-    margin-bottom: 1.5rem; }
+.content-half .media-wrap img {
+  border-radius: 50px; }
+
+.video .media-wrap {
+  margin-left: 30px; }
 
 /*----------------------------------------------------------------
 # Header Style
@@ -514,6 +507,16 @@ a img.aligncenter {
         color: #3ca33a; }
 
 /*----------------------------------------------------------------
+# Process Section Style
+----------------------------------------------------------------*/
+.process {
+  background: #3ca33a; }
+  .process .main-head {
+    color: #4eac4c;
+    line-height: 0.8;
+    margin-top: -50px; }
+
+/*----------------------------------------------------------------
 # Selector Style
 ----------------------------------------------------------------*/
 .selector {
@@ -541,49 +544,85 @@ a img.aligncenter {
 /*----------------------------------------------------------------
 # Tabs Style
 ----------------------------------------------------------------*/
-.tabs {
-  padding: 50px 0; }
-  .tabs .nav {
+.tabs .nav {
+  border: none;
+  justify-content: center; }
+  .tabs .nav .nav-item {
     border: none;
-    justify-content: center; }
-    .tabs .nav .nav-item {
+    margin: 0 50px; }
+    .tabs .nav .nav-item .nav-link {
       border: none;
-      margin: 0 50px; }
-      .tabs .nav .nav-item .nav-link {
-        border: none;
-        color: #e1e1e1;
-        position: relative;
+      color: #e1e1e1;
+      position: relative;
+      text-align: center;
+      -webkit-transition: all 0.3s ease-in-out;
+      -moz-transition: all 0.3s ease-in-out;
+      -ms-transition: all 0.3s ease-in-out;
+      -o-transition: all 0.3s ease-in-out;
+      transition: all 0.3s ease-in-out; }
+      .tabs .nav .nav-item .nav-link.active, .tabs .nav .nav-item .nav-link:hover {
+        color: #50b04d; }
+      .tabs .nav .nav-item .nav-link.active:before {
+        background: url(../img/tooltip.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        bottom: -45px;
+        content: '';
+        height: 40px;
+        left: 50%;
+        position: absolute;
         text-align: center;
-        -webkit-transition: all 0.3s ease-in-out;
-        -moz-transition: all 0.3s ease-in-out;
-        -ms-transition: all 0.3s ease-in-out;
-        -o-transition: all 0.3s ease-in-out;
-        transition: all 0.3s ease-in-out; }
-        .tabs .nav .nav-item .nav-link.active, .tabs .nav .nav-item .nav-link:hover {
-          color: #50b04d; }
-        .tabs .nav .nav-item .nav-link.active:before {
-          background: url(../img/tooltip.png);
-          background-repeat: no-repeat;
-          background-size: cover;
-          bottom: -45px;
-          content: '';
-          height: 40px;
-          left: 50%;
-          position: absolute;
-          text-align: center;
-          width: 72%;
-          -webkit-transform: translateX(-50%);
-          -moz-transform: translateX(-50%);
-          -o-transform: translateX(-50%);
-          transform: translateX(-50%); }
-        .tabs .nav .nav-item .nav-link i {
-          display: block; }
-  .tabs .tab-content {
-    background-color: #f5f5f5;
-    border-radius: 50px 0 0 50px;
-    margin-top: 45px; }
-    .tabs .tab-content .tab-pane {
-      padding: 60px; }
+        width: 72%;
+        -webkit-transform: translateX(-50%);
+        -moz-transform: translateX(-50%);
+        -o-transform: translateX(-50%);
+        transform: translateX(-50%); }
+      .tabs .nav .nav-item .nav-link i {
+        display: block; }
+
+.tabs .tab-content {
+  background-color: #f5f5f5;
+  border-radius: 50px 0 0 50px;
+  margin-top: 45px; }
+  .tabs .tab-content .tab-pane {
+    padding: 60px; }
+  .tabs .tab-content .tab-card {
+    background: #ffffff;
+    border-radius: 50px;
+    display: inline-block;
+    list-style: none;
+    margin: 10px;
+    padding: 20px;
+    width: 45%; }
+    .tabs .tab-content .tab-card img {
+      display: inline-block;
+      height: auto;
+      width: 150px; }
+    .tabs .tab-content .tab-card .card-content {
+      display: inline-block;
+      margin-left: 30px;
+      vertical-align: middle;
+      width: 60%; }
+      .tabs .tab-content .tab-card .card-content .nutri-fact {
+        margin: 15px 0 0; }
+        .tabs .tab-content .tab-card .card-content .nutri-fact tr {
+          border-right: solid 1px #f5f5f5;
+          margin: 0;
+          padding: 0 20px; }
+          .tabs .tab-content .tab-card .card-content .nutri-fact tr:first-child {
+            padding-left: 0; }
+          .tabs .tab-content .tab-card .card-content .nutri-fact tr:last-child {
+            border: none; }
+
+.nutri-fact {
+  margin-bottom: 50px; }
+  .nutri-fact tr {
+    display: inline-block;
+    margin-right: 50px; }
+    .nutri-fact tr th {
+      display: block; }
+    .nutri-fact tr:last-child {
+      margin: 0; }
 
 /*--------------------------------------------------------------
 3. Module

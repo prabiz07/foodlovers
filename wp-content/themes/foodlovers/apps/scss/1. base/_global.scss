@@ -59,7 +59,7 @@ p{
 section{
     overflow: hidden;
     position: relative;
-    padding: 100px 0;
+    padding: 50px 0;
 }
 
 a,
@@ -106,4 +106,10 @@ a:focus{
 .stretch-right{
     margin-right: calc(50% - 50vw);
     position: static;
+}
+
+.main-head{
+    font-size: 112px;
+    font-weight: bold;
+    text-transform: uppercase;
 }
