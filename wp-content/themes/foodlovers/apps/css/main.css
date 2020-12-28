@@ -129,9 +129,6 @@ a:focus {
 .ptb-20 {
   padding: 20px 0; }
 
-.pt-0 {
-  padding-top: 0; }
-
 .mt--30 {
   margin-top: -30px; }
 
@@ -151,8 +148,9 @@ a:focus {
   border-bottom-left-radius: 50px;
   height: 300px;
   position: absolute;
+  right: 0;
   top: 30%;
-  width: 100%; }
+  width: 91%; }
 
 .stretch-right {
   margin-right: calc(50% - 50vw) !important; }
@@ -515,20 +513,33 @@ a img.aligncenter {
       .site-header .main-navigation .menu li:hover a {
         color: #3ca33a; }
 
+.curve-bg {
+  position: relative; }
+  .curve-bg:before {
+    border-radius: 50px 0 0 50px;
+    content: '';
+    height: 100%;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 91%; }
+
 /*----------------------------------------------------------------
 # Process Section Style
 ----------------------------------------------------------------*/
 .process {
-  background: #3ca33a;
-  border-radius: 50px 0 0 50px; }
+  margin-top: 50px; }
+  .process:before {
+    background: #3ca33a; }
   .process .section-head {
     color: #4eac4c;
     padding: 0 50px;
-    width: 100%; }
+    width: 100%;
+    z-index: 0; }
   .process .process-wrapper {
     display: flex;
     flex-wrap: wrap;
-    padding: 0 30px 0 0; }
+    padding: 0 50px; }
     .process .process-wrapper.flip {
       flex-direction: column-reverse; }
       .process .process-wrapper.flip img {
@@ -570,30 +581,36 @@ a img.aligncenter {
 /*----------------------------------------------------------------
 # Split column Style
 ----------------------------------------------------------------*/
-.split-column {
+.split-column:before {
   background: #f5f5f5;
   z-index: 0; }
-  .split-column:after {
-    background: #ffbe34;
-    border-radius: 50px 0 0 50px;
-    content: '';
-    height: 100%;
-    position: absolute;
-    right: 0;
-    top: 0;
-    width: 40%; }
-  .split-column .section-head {
-    color: rgba(255, 255, 255, 0.5);
-    position: relative;
-    z-index: 1; }
-  .split-column .column-one {
-    width: 70%; }
-    .split-column .column-one h2 {
-      color: #333333;
-      font-size: 52px;
-      font-weight: 600;
-      margin-bottom: 35px;
-      text-transform: uppercase; }
+
+.split-column:after {
+  background: #ffbe34;
+  border-radius: 50px 0 0 50px;
+  content: '';
+  height: 100%;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 40%; }
+
+.split-column .section-head {
+  color: rgba(255, 255, 255, 0.5);
+  position: relative;
+  padding: 0 50px;
+  z-index: 1; }
+
+.split-column .column-one {
+  display: inline-block;
+  padding: 0 50px;
+  width: 70%; }
+  .split-column .column-one h2 {
+    color: #333333;
+    font-size: 52px;
+    font-weight: 600;
+    margin-bottom: 35px;
+    text-transform: uppercase; }
 
 /*----------------------------------------------------------------
 # Tabs Style

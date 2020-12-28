@@ -3,8 +3,10 @@
 ----------------------------------------------------------------*/
 
 .split-column{
-    background: #f5f5f5;
-    z-index: 0;
+    &:before{
+        background: #f5f5f5;
+        z-index: 0;
+    }
 
     &:after{
         background: #ffbe34;
@@ -20,11 +22,15 @@
     .section-head{
         color: rgba(255, 255, 255, 0.5);
         position: relative;
+        padding: 0 50px;
         z-index: 1;
     }
 
     .column-one{
+        display: inline-block;
+        padding: 0 50px;
         width: 70%;
+        
 
         h2{
             color: #333333;

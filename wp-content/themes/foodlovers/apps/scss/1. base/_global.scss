@@ -84,10 +84,6 @@ a:focus{
     padding: 20px 0;
 }
 
-.pt-0{
-    padding-top: 0;
-}
-
 .mt--30{
     margin-top: -30px;
 }
@@ -111,8 +107,9 @@ a:focus{
     border-bottom-left-radius: 50px;
     height: 300px;
     position: absolute;
+    right: 0;
     top: 30%;
-    width: 100%;
+    width: 91%;
 }
 
 .stretch-right{

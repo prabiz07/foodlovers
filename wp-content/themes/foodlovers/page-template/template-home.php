@@ -359,11 +359,11 @@ Template Name: Home
     </div>
 </section>
 
-<section class="process pt-0">
+<section class="process curve-bg pt-0">
     <div class="container">
         <div class="row">
             <h2 class="section-head">How it works</h2>
-            <div class="col-4">
+            <div class="col-4 mt--30">
                 <div class="process-wrapper">
                     <img src="<?php echo get_template_directory_uri();?>/apps/img/researching.svg" alt="">
                     <div class="process-content">
@@ -372,7 +372,7 @@ Template Name: Home
                     </div>
                 </div>
             </div>
-            <div class="col-4">
+            <div class="col-4 mt--30">
                 <div class="process-wrapper flip">
                     <img src="<?php echo get_template_directory_uri();?>/apps/img/cooking.svg" alt="">
                     <div class="process-content">
@@ -381,7 +381,7 @@ Template Name: Home
                     </div>
                 </div>
             </div>
-            <div class="col-4">
+            <div class="col-4 mt--30">
                 <div class="process-wrapper">
                     <img src="<?php echo get_template_directory_uri();?>/apps/img/delivery.svg" alt="">
                     <div class="process-content">
@@ -398,7 +398,7 @@ Template Name: Home
     <h1>Related Post</h1>
 </section>
 
-<section class="split-column question pt-0">
+<section class="split-column question curve-bg pt-0">
     <div class="container">
         <div class="row">
             <div class="col-12">
@@ -406,7 +406,6 @@ Template Name: Home
                 <div class="column-one">
                     <h1>Need a free consultation?</h1>
                 </div>
-                <div class="column-two"></div>
             </div>
         </div>
     </div>
