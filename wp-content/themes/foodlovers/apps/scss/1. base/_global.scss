@@ -84,12 +84,24 @@ a:focus{
     padding: 20px 0;
 }
 
+.pt-0{
+    padding-top: 0;
+}
+
+.mt--30{
+    margin-top: -30px;
+}
+
 .dis-ib{
     display: inline-block;
 }
 
 .no-margin{
     margin: 0;
+}
+
+.no-padding{
+    padding: 0;
 }
 
 .dotted-bg{
@@ -104,12 +116,13 @@ a:focus{
 }
 
 .stretch-right{
-    margin-right: calc(50% - 50vw);
-    position: static;
+    margin-right: calc(50% - 50vw) !important;
+    // position: static;
 }
 
-.main-head{
+.section-head{
     font-size: 112px;
     font-weight: bold;
+    line-height: 0.8;
     text-transform: uppercase;
 }

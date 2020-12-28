@@ -1,0 +1,37 @@
+/*----------------------------------------------------------------
+# Split column Style
+----------------------------------------------------------------*/
+
+.split-column{
+    background: #f5f5f5;
+    z-index: 0;
+
+    &:after{
+        background: #ffbe34;
+        border-radius: 50px 0 0 50px;
+        content: '';
+        height: 100%;
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 40%;
+    }
+
+    .section-head{
+        color: rgba(255, 255, 255, 0.5);
+        position: relative;
+        z-index: 1;
+    }
+
+    .column-one{
+        width: 70%;
+
+        h2{
+            color: #333333;
+            font-size: 52px;
+            font-weight: 600;
+            margin-bottom: 35px;
+            text-transform: uppercase;
+        }
+    }
+}

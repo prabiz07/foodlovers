@@ -93,7 +93,7 @@ Template Name: Home
             </div>
             <div class="col-5">
                 <div class="colored-bg stretch-right">
-                    <h2 class="banner-title main-head">special</h2>
+                    <h2 class="banner-title section-head">special</h2>
                 </div>
             </div>
             <ul class="controls">
@@ -359,16 +359,54 @@ Template Name: Home
     </div>
 </section>
 
-<section class="process">
+<section class="process pt-0">
+    <div class="container">
+        <div class="row">
+            <h2 class="section-head">How it works</h2>
+            <div class="col-4">
+                <div class="process-wrapper">
+                    <img src="<?php echo get_template_directory_uri();?>/apps/img/researching.svg" alt="">
+                    <div class="process-content">
+                        <h2>Choose</h2>
+                        <p>Do you want to loose weight, exercise, adhere to a therapeutic diet? Our dietition will help you with choosing the right</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="process-wrapper flip">
+                    <img src="<?php echo get_template_directory_uri();?>/apps/img/cooking.svg" alt="">
+                    <div class="process-content">
+                        <h2>Prepare Food</h2>
+                        <p>We prepare food from fresh and proven products according to the menu developed by the chef, nutritionist, and fitness trainer.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="process-wrapper">
+                    <img src="<?php echo get_template_directory_uri();?>/apps/img/delivery.svg" alt="">
+                    <div class="process-content">
+                        <h2>Deliver</h2>
+                        <p>Home or Office? Our courier will deliver your 5-times daily diet to anywhere in the world.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="posts">
+    <h1>Related Post</h1>
+</section>
+
+<section class="split-column question pt-0">
     <div class="container">
         <div class="row">
             <div class="col-12">
-                <h2 class="main-head">How it works</h2>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-4">
-                
+                <h2 class="section-head">Have Questions?</h2>
+                <div class="column-one">
+                    <h1>Need a free consultation?</h1>
+                </div>
+                <div class="column-two"></div>
             </div>
         </div>
     </div>

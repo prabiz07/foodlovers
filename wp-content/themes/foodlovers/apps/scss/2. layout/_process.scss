@@ -1,12 +1,43 @@
 /*----------------------------------------------------------------
 # Process Section Style
 ----------------------------------------------------------------*/
+
 .process{
     background: #3ca33a;
-
-    .main-head{
+    border-radius: 50px 0 0 50px;
+    
+    
+    .section-head{
         color: #4eac4c;
-        line-height: 0.8;
-        margin-top: -50px;
+        padding: 0 50px;;
+        width: 100%;
+    }
+
+    .process-wrapper{
+        display: flex;
+        flex-wrap: wrap;
+        padding: 0 30px 0 0;
+
+        &.flip{
+            flex-direction: column-reverse;
+
+            img{
+                margin: 37px 0 0;
+            }
+        }
+
+        img{
+            margin: 0 0 37px;
+            width: 65%;
+        }
+
+        .process-content{
+            color: #ffffff;
+            letter-spacing: 0.5px;
+        }
+
+        h2{
+            text-transform: uppercase;
+        }
     }
 }
