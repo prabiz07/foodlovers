@@ -2,7 +2,7 @@
 # Split column Style
 ----------------------------------------------------------------*/
 
-.split-column{
+.question{
     &:before{
         background: #f5f5f5;
         z-index: 0;
@@ -28,8 +28,8 @@
 
     .column-one{
         display: inline-block;
-        padding: 0 50px;
-        width: 70%;
+        padding: 30px 50px 0;
+        width: 50%;
         
 
         h2{
@@ -38,6 +38,50 @@
             font-weight: 600;
             margin-bottom: 35px;
             text-transform: uppercase;
+        }
+
+        form{
+            align-items: center;
+            background: #fff;
+            border: 1px solid #ccc;
+            border-radius: 50px;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            margin-top: 50px;
+
+            input{
+                all: inherit;
+                border: none;
+                color: #666;
+                flex-grow: 2;
+                justify-content: center;
+                margin: 0;
+                padding: 6px 15px;
+            }
+
+            button{
+                all: inherit;
+                align-items: center;
+                background: #ff7d35;
+                border-radius: 50px;
+                color: #ffffff;
+                height: 32px;
+                justify-content: center;
+                letter-spacing: 0.5px;
+                margin: 0 2px 0 0;
+                padding: 0 15px;
+                width: 120px;
+            }
+        }
+
+        img{
+            left: 70%;
+            position: absolute;
+            top: 36%;
+            width: 560px;
+            z-index: 1;
+            @include translateX(-50%);
         }
     }
 }

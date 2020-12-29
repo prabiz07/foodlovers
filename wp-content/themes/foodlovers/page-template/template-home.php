@@ -359,7 +359,7 @@ Template Name: Home
     </div>
 </section>
 
-<section class="process curve-bg pt-0">
+<section class="process curve-bg pt-0 mtb-50">
     <div class="container">
         <div class="row">
             <h2 class="section-head">How it works</h2>
@@ -394,17 +394,24 @@ Template Name: Home
     </div>
 </section>
 
-<section class="posts">
+<!-- <section class="posts">
     <h1>Related Post</h1>
-</section>
+</section> -->
 
-<section class="split-column question curve-bg pt-0">
+<section class="question curve-bg pt-0 mtb-50">
     <div class="container">
         <div class="row">
             <div class="col-12">
                 <h2 class="section-head">Have Questions?</h2>
                 <div class="column-one">
-                    <h1>Need a free consultation?</h1>
+                    <h2>Need a free consultation?</h2>
+                    <p>If you have questions, please fill out the form and we will call you back within five minutes.</p>
+                    <form>
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="email">
+                        <button type="submit" class="btn btn-primary">Send</button>
+                    </form>
+                    <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                    <img src="<?php echo get_template_directory_uri();?>/apps/img/foodbasket.png" alt="">
                 </div>
             </div>
         </div>
