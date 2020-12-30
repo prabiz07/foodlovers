@@ -56,6 +56,26 @@ Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-com
 # Colors
 ----------------------------------------------------------------*/
 /*----------------------------------------------------------------
+# Form Style
+----------------------------------------------------------------*/
+.default-form {
+  align-items: center;
+  border-radius: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 50px; }
+  .default-form input {
+    all: inherit;
+    background: #fff;
+    border: 1px solid #ccc;
+    color: #666;
+    flex-grow: 2;
+    justify-content: center;
+    margin: 0;
+    padding: 8px 15px; }
+
+/*----------------------------------------------------------------
 # Global Mixins
 ----------------------------------------------------------------*/
 /*----------------------------------------------------------------
@@ -489,32 +509,111 @@ a img.aligncenter {
   margin-left: 30px; }
 
 /*----------------------------------------------------------------
+# Footer Style
+----------------------------------------------------------------*/
+.site-footer .footer-top .row {
+  border-bottom: solid 3px #f5f5f5;
+  padding: 50px 0; }
+
+.site-footer .footer-top .site-branding,
+.site-footer .footer-top .social-media {
+  display: inline-block; }
+
+.site-footer .footer-top .social-media {
+  margin: 0;
+  float: right; }
+  .site-footer .footer-top .social-media .sicon {
+    background: #f5f5f5;
+    border-radius: 100%;
+    display: inline-block;
+    height: 50px;
+    position: relative;
+    width: 50px; }
+    .site-footer .footer-top .social-media .sicon a {
+      left: 50%;
+      position: absolute;
+      top: 50%;
+      -webkit-transform: translate(-50%, -50%);
+      -moz-transform: translate(-50%, -50%);
+      -o-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%); }
+    .site-footer .footer-top .social-media .sicon.facebook i {
+      color: #3b5998; }
+    .site-footer .footer-top .social-media .sicon.twitter i {
+      color: #1DA1F2; }
+    .site-footer .footer-top .social-media .sicon.insta i {
+      color: #FCAF45; }
+
+.site-footer .footer-bottom .footer-title {
+  font-size: 22px;
+  padding-bottom: 35px; }
+
+.site-footer .footer-bottom .default-form {
+  margin-top: 35px;
+  width: 80%; }
+
+.site-footer .footer-bottom .contact-detail li {
+  margin-bottom: 12px;
+  position: relative;
+  padding-left: 30px; }
+  .site-footer .footer-bottom .contact-detail li:before {
+    color: #3aa138;
+    font-family: 'Font Awesome 5 Free';
+    left: 0;
+    position: absolute;
+    top: 0; }
+  .site-footer .footer-bottom .contact-detail li a {
+    color: inherit; }
+
+.site-footer .footer-bottom .contact-detail .call:before {
+  content: '\f879'; }
+
+.site-footer .footer-bottom .contact-detail .call a {
+  font-weight: bold; }
+
+.site-footer .footer-bottom .contact-detail .time:before {
+  content: '\f017'; }
+
+.site-footer .footer-bottom .contact-detail .mail:before {
+  content: '\f0e0'; }
+
+.site-footer .copyright {
+  padding: 0 0 20px 0; }
+  .site-footer .copyright .wrapper {
+    font-size: 12px;
+    letter-spacing: 0.3px;
+    line-height: 1;
+    position: relative;
+    padding-left: 25px; }
+    .site-footer .copyright .wrapper a {
+      color: inherit; }
+    .site-footer .copyright .wrapper:before {
+      background: #ffbe34;
+      border-radius: 50px;
+      content: '';
+      height: 5px;
+      left: 0;
+      margin-right: 5px;
+      position: absolute;
+      top: 50%;
+      width: 15px;
+      -webkit-transform: translateY(-50%);
+      -moz-transform: translateY(-50%);
+      -o-transform: translateY(-50%);
+      transform: translateY(-50%); }
+
+/*----------------------------------------------------------------
 # Header Style
 ----------------------------------------------------------------*/
 .site-header {
   position: relative;
   padding: 20px 0; }
-  .site-header .site-branding {
-    text-align: center; }
-    .site-header .site-branding img {
-      height: 80px;
-      width: auto; }
-  .site-header .main-navigation .menu {
-    justify-content: flex-end; }
-    .site-header .main-navigation .menu li {
-      font-size: 16px;
-      font-weight: normal;
-      padding: 0 10px;
-      -webkit-transition: all 0.3s ease-in-out;
-      -moz-transition: all 0.3s ease-in-out;
-      -o-transition: all 0.3s ease-in-out;
-      transition: all 0.3s ease-in-out; }
-      .site-header .main-navigation .menu li a {
-        color: #26262a; }
-      .site-header .main-navigation .menu li.current-menu-item a {
-        color: #3ca33a; }
-      .site-header .main-navigation .menu li:hover a {
-        color: #3ca33a; }
+
+.site-branding {
+  text-align: center; }
+  .site-branding img {
+    height: 80px;
+    width: auto; }
 
 .curve-bg {
   position: relative; }
@@ -526,6 +625,47 @@ a img.aligncenter {
     right: 0;
     top: 0;
     width: 91%; }
+
+/*----------------------------------------------------------------
+# Navigation Menu Style
+----------------------------------------------------------------*/
+.main-navigation .menu {
+  justify-content: flex-end; }
+  .main-navigation .menu li {
+    font-size: 16px;
+    font-weight: normal;
+    padding: 0 10px;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out; }
+    .main-navigation .menu li a {
+      color: #26262a; }
+    .main-navigation .menu li.current-menu-item a {
+      color: #3ca33a; }
+    .main-navigation .menu li:hover a {
+      color: #3ca33a; }
+
+.footer-navigation .footer-menu {
+  -webkit-column-count: 2;
+  -moz-column-count: 2;
+  -moz-column-count: 2;
+  column-count: 2;
+  list-style: disc; }
+  .footer-navigation .footer-menu .menu-item {
+    color: #3aa138;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out; }
+    .footer-navigation .footer-menu .menu-item a {
+      color: inherit; }
+    .footer-navigation .footer-menu .menu-item:hover {
+      color: #94cd93;
+      padding-left: 5px; }
+      .footer-navigation .footer-menu .menu-item:hover a {
+        color: #94cd93; }
 
 /*----------------------------------------------------------------
 # Process Section Style
@@ -614,35 +754,12 @@ a img.aligncenter {
     font-weight: 600;
     margin-bottom: 35px;
     text-transform: uppercase; }
-  .question .column-one form {
-    align-items: center;
+  .question .column-one .default-form {
     background: #fff;
-    border: 1px solid #ccc;
-    border-radius: 50px;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    margin-top: 50px; }
-    .question .column-one form input {
-      all: inherit;
+    border: 1px solid #ccc; }
+    .question .column-one .default-form input {
       border: none;
-      color: #666;
-      flex-grow: 2;
-      justify-content: center;
-      margin: 0;
-      padding: 6px 15px; }
-    .question .column-one form button {
-      all: inherit;
-      align-items: center;
-      background: #ff7d35;
-      border-radius: 50px;
-      color: #ffffff;
-      height: 32px;
-      justify-content: center;
-      letter-spacing: 0.5px;
-      margin: 0 2px 0 0;
-      padding: 0 15px;
-      width: 120px; }
+      padding: 0 15px; }
   .question .column-one img {
     left: 70%;
     position: absolute;
@@ -15336,6 +15453,22 @@ readers do not read off random characters that represent icons */
 .fas {
   font-family: 'Font Awesome 5 Free';
   font-weight: 900; }
+
+/*!
+ * Font Awesome Free 5.15.1 by @fontawesome - https://fontawesome.com
+ * License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)
+ */
+@font-face {
+  font-family: 'Font Awesome 5 Brands';
+  font-style: normal;
+  font-weight: 400;
+  font-display: block;
+  src: url("../fonts/fa-brands-400.eot");
+  src: url("../fonts/fa-brands-400.eot?#iefix") format("embedded-opentype"), url("../fonts/fa-brands-400.woff2") format("woff2"), url("../fonts/fa-brands-400.woff") format("woff"), url("../fonts/fa-brands-400.ttf") format("truetype"), url("../fonts/fa-brands-400.svg#fontawesome") format("svg"); }
+
+.fab {
+  font-family: 'Font Awesome 5 Brands';
+  font-weight: 400; }
 
 /*--------------------------------------------------------------
 6. Page

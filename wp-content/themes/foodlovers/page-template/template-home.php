@@ -406,9 +406,9 @@ Template Name: Home
                 <div class="column-one">
                     <h2>Need a free consultation?</h2>
                     <p>If you have questions, please fill out the form and we will call you back within five minutes.</p>
-                    <form>
+                    <form class="default-form">
                         <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="email">
-                        <button type="submit" class="btn btn-primary">Send</button>
+                        <button type="submit" class="main-btn">Send</button>
                     </form>
                     <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
                     <img src="<?php echo get_template_directory_uri();?>/apps/img/foodbasket.png" alt="">

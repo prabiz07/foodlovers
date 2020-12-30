@@ -40,38 +40,13 @@
             text-transform: uppercase;
         }
 
-        form{
-            align-items: center;
+        .default-form{
             background: #fff;
             border: 1px solid #ccc;
-            border-radius: 50px;
-            display: flex;
-            flex-direction: row;
-            justify-content: center;
-            margin-top: 50px;
 
             input{
-                all: inherit;
                 border: none;
-                color: #666;
-                flex-grow: 2;
-                justify-content: center;
-                margin: 0;
-                padding: 6px 15px;
-            }
-
-            button{
-                all: inherit;
-                align-items: center;
-                background: #ff7d35;
-                border-radius: 50px;
-                color: #ffffff;
-                height: 32px;
-                justify-content: center;
-                letter-spacing: 0.5px;
-                margin: 0 2px 0 0;
                 padding: 0 15px;
-                width: 120px;
             }
         }
 

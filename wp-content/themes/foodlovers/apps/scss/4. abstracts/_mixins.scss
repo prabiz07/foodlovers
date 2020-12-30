@@ -36,7 +36,7 @@
 
 // translateXY
 @mixin translateXY ($x, $y) {
-    @include transform(translateXY($x, $y));
+    @include transform(translate($x, $y));
 }
 
 // rotate
