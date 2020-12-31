@@ -29,3 +29,46 @@
         width: 91%;
     }
 }
+
+.yellow-head{
+    &:before{
+        background: #ffbe34;
+    }
+}
+
+.page-header{
+    .breadcrumb{
+        background: transparent;
+    }
+
+    .breadcrumb-item {
+        font-size: 13px;
+        font-weight: bold;
+
+        &+ .breadcrumb-item{
+            padding-left: 0.2rem;
+
+            &::before{
+                color: rgba(26, 26, 26, 0.75);
+                padding-right: 0.2rem;
+            }
+        }
+
+        &.active,
+        a{
+            color: rgba(26, 26, 26, 0.75);
+        }
+    }
+
+    .main-title{
+        margin-left: 4rem;
+    }
+
+    img{
+        height: 500px;
+        position: absolute;
+        right: 0;
+        top: -160px;
+        width: auto;
+    }
+}

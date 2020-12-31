@@ -17,7 +17,7 @@ Template Name: Home
                 <span class="rings"></span>
                 <div class="slider-content">
                     <div class="banner-content active">
-                        <h1>Salmon with asparagus</h1>
+                        <h2 class="main-title">Salmon with asparagus</h2>
                         <p>Fragrant baked salmon with notes of citrus on a pillow of spinach and mushrooms. Perfectly in harmony with asparagus.</p>
                         <table class="nutri-fact">
                             <tbody>
@@ -41,7 +41,7 @@ Template Name: Home
                         </div>
                     </div>
                     <div class="banner-content">
-                        <h1>Boiled Egg with Toast</h1>
+                        <h2 class="main-title">Boiled Egg with Toast</h2>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam pellentesque iaculis dapibus. Sed eleifend gravida lorem non mattis. Aliquam euismod mattis elementum.</p>
                         <table class="nutri-fact">
                             <tbody>
@@ -65,7 +65,7 @@ Template Name: Home
                         </div>
                     </div>
                     <div class="banner-content">
-                        <h1>Mixed Veggie Salad</h1>
+                        <h2 class="main-title">Mixed Veggie Salad</h2>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam pellentesque iaculis dapibus. Sed eleifend gravida lorem non mattis. Aliquam euismod mattis elementum.</p>
                         <table class="nutri-fact">
                             <tbody>
@@ -404,7 +404,7 @@ Template Name: Home
             <div class="col-12">
                 <h2 class="section-head">Have Questions?</h2>
                 <div class="column-one">
-                    <h2>Need a free consultation?</h2>
+                    <h2 class="main-title">Need a free consultation?</h2>
                     <p>If you have questions, please fill out the form and we will call you back within five minutes.</p>
                     <form class="default-form">
                         <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="email">

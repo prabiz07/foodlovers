@@ -160,6 +160,13 @@ function foodlovers_scripts() {
 }
 add_action( 'wp_enqueue_scripts', 'foodlovers_scripts' );
 
+function load_slider_js(){
+	if(is_front_page()){
+		wp_enqueue_script( 'slider_script', get_template_directory_uri(). '/apps/js/slider.js', array(), '1.0.0', true );
+	}
+}
+add_action('wp_enqueue_scripts', 'load_slider_js');
+
 // Defining the custom action and give functionality to the action.
 function main_nav(){
 	do_action( 'main-nav' );

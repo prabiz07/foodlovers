@@ -184,6 +184,13 @@ a:focus {
   line-height: 0.8;
   text-transform: uppercase; }
 
+.main-title {
+  color: #333333;
+  font-size: 52px;
+  font-weight: 600;
+  margin-bottom: 35px;
+  text-transform: uppercase; }
+
 /*----------------------------------------------------------------
 # Main Font
 ----------------------------------------------------------------*/
@@ -422,12 +429,6 @@ a img.aligncenter {
     -o-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
     width: 60%; }
-    .banner .banner-content h1 {
-      color: #333333;
-      font-size: 52px;
-      font-weight: 600;
-      margin-bottom: 35px;
-      text-transform: uppercase; }
     .banner .banner-content.active {
       opacity: 1; }
   .banner .colored-bg {
@@ -494,19 +495,54 @@ a img.aligncenter {
 /*----------------------------------------------------------------
 # Content Style
 ----------------------------------------------------------------*/
-.content-half .content {
-  font-size: 18px; }
-  .content-half .content .title {
-    text-transform: uppercase; }
-  .content-half .content .title,
-  .content-half .content p {
-    margin-bottom: 1.5rem; }
+.content-half .content .title {
+  text-transform: uppercase; }
+
+.content-half .content .title,
+.content-half .content p {
+  margin-bottom: 1.5rem; }
+
+.content-half .content ul {
+  list-style: none; }
+  .content-half .content ul li {
+    color: #3aa138;
+    margin-bottom: 15px;
+    position: relative;
+    padding-left: 30px; }
+    .content-half .content ul li:before {
+      color: #3aa138;
+      content: '\f058';
+      font-family: 'Font Awesome 5 Free';
+      font-weight: 400;
+      position: absolute;
+      left: 0; }
 
 .content-half .media-wrap img {
   border-radius: 50px; }
 
 .video .media-wrap {
   margin-left: 30px; }
+
+/*----------------------------------------------------------------
+# Counter Style
+----------------------------------------------------------------*/
+.counter.curve-bg:before {
+  background: #f5f5f5; }
+
+.counter .count {
+  color: #ff7d35;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  text-align: center; }
+  .counter .count h2 {
+    color: rgba(26, 26, 26, 0.75);
+    font-size: 48px;
+    font-weight: bold;
+    line-height: 1;
+    margin: 0; }
+  .counter .count p {
+    margin: 0; }
 
 /*----------------------------------------------------------------
 # Footer Style
@@ -625,6 +661,34 @@ a img.aligncenter {
     right: 0;
     top: 0;
     width: 91%; }
+
+.yellow-head:before {
+  background: #ffbe34; }
+
+.page-header .breadcrumb {
+  background: transparent; }
+
+.page-header .breadcrumb-item {
+  font-size: 13px;
+  font-weight: bold; }
+  .page-header .breadcrumb-item + .breadcrumb-item {
+    padding-left: 0.2rem; }
+    .page-header .breadcrumb-item + .breadcrumb-item::before {
+      color: rgba(26, 26, 26, 0.75);
+      padding-right: 0.2rem; }
+  .page-header .breadcrumb-item.active,
+  .page-header .breadcrumb-item a {
+    color: rgba(26, 26, 26, 0.75); }
+
+.page-header .main-title {
+  margin-left: 4rem; }
+
+.page-header img {
+  height: 500px;
+  position: absolute;
+  right: 0;
+  top: -160px;
+  width: auto; }
 
 /*----------------------------------------------------------------
 # Navigation Menu Style
@@ -748,12 +812,6 @@ a img.aligncenter {
   display: inline-block;
   padding: 30px 50px 0;
   width: 50%; }
-  .question .column-one h2 {
-    color: #333333;
-    font-size: 52px;
-    font-weight: 600;
-    margin-bottom: 35px;
-    text-transform: uppercase; }
   .question .column-one .default-form {
     background: #fff;
     border: 1px solid #ccc; }
@@ -15453,6 +15511,22 @@ readers do not read off random characters that represent icons */
 .fas {
   font-family: 'Font Awesome 5 Free';
   font-weight: 900; }
+
+/*!
+ * Font Awesome Free 5.15.1 by @fontawesome - https://fontawesome.com
+ * License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)
+ */
+@font-face {
+  font-family: 'Font Awesome 5 Free';
+  font-style: normal;
+  font-weight: 400;
+  font-display: block;
+  src: url("../fonts/fa-regular-400.eot");
+  src: url("../fonts/fa-regular-400.eot?#iefix") format("embedded-opentype"), url("../fonts/fa-regular-400.woff2") format("woff2"), url("../fonts/fa-regular-400.woff") format("woff"), url("../fonts/fa-regular-400.ttf") format("truetype"), url("../fonts/fa-regular-400.svg#fontawesome") format("svg"); }
+
+.far {
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 400; }
 
 /*!
  * Font Awesome Free 5.15.1 by @fontawesome - https://fontawesome.com

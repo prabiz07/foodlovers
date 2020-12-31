@@ -3,8 +3,6 @@
 ----------------------------------------------------------------*/
 .content-half{
     .content{
-        font-size: 18px;
-    
         .title{
             text-transform: uppercase;
         }
@@ -12,6 +10,26 @@
         .title,
         p{
             margin-bottom: 1.5rem;
+        }
+
+        ul{
+            list-style: none;
+
+            li{
+                color: #3aa138;
+                margin-bottom: 15px;
+                position: relative;
+                padding-left: 30px;
+
+                &:before{
+                    color: #3aa138;
+                    content: '\f058';
+                    font-family: 'Font Awesome 5 Free';
+                    font-weight: 400;
+                    position: absolute;
+                    left: 0;
+                }
+            }
         }
     }
 

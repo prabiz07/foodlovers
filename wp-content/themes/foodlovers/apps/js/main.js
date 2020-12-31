@@ -1,41 +1,4 @@
 /*----------------------------------------------------------------
-# Slider JS init
-----------------------------------------------------------------*/
-// Image Slider
-const sliderBox = document.querySelector('.banner-img');
-const slides = sliderBox.getElementsByTagName('img');
-let i = 0;
-
-function nextSlide() {
-    slides[i].classList.remove('active');
-    i = (i + 1) % slides.length;
-    slides[i].classList.add('active');
-}
-
-function prevSlide() {
-    slides[i].classList.remove('active');
-    i = (i - 1 + slides.length) % slides.length;
-    slides[i].classList.add('active');
-}
-
-// Contents Slider
-const contentBox = document.querySelector('.slider-content');
-const contentSlides = contentBox.getElementsByClassName('banner-content');
-let j = 0;
-
-function nextContentSlide() {
-    contentSlides[j].classList.remove('active');
-    j = (j + 1) % contentSlides.length;
-    contentSlides[j].classList.add('active');
-}
-
-function prevContentSlide() {
-    contentSlides[j].classList.remove('active');
-    j = (j - 1 + contentSlides.length) % contentSlides.length;
-    contentSlides[j].classList.add('active');
-}
-
-/*----------------------------------------------------------------
 # Ripple Button JS init
 ----------------------------------------------------------------*/
 const buttons = document.querySelectorAll('.main-btn');
@@ -59,6 +22,32 @@ function rippleBtn(e) {
     // Prevent Default
     e.preventDefault();
 }
+
+/*----------------------------------------------------------------
+# CountUp JS init
+----------------------------------------------------------------*/
+
+const count = document.querySelectorAll('.number');
+
+count.forEach(function(){
+    const arrayInner = count['0', '1', '2', '3'];
+    const countInner = arrayInner.innerHTML;
+    // count.innerHTML = 0;
+
+    let i = 0;
+    const interval = setInterval(function(){
+        const math = Math.floor(Math.random()*(countInner/50));
+        if(i+math <= countInner){
+            i += math;
+            count.innerHTML = i;
+        }else{
+            count.innerHTML = countInner;
+            clearInterval(interval);
+        }
+    }, 5);
+
+    console.log(arrayInner);
+});
 
 
 
