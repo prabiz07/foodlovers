@@ -152,7 +152,10 @@ function foodlovers_scripts() {
 	wp_enqueue_script( 'jquery', get_template_directory_uri(), array(), true );
 	wp_enqueue_script( 'jquery-ui', get_template_directory_uri(). '/apps/js/jquery-ui.js', array(), '1.12.1', true );
 	wp_enqueue_script( 'bootstrap', get_template_directory_uri(). '/apps/js/bootstrap.min.js', array(), '4.5.3', true );
+	wp_enqueue_script( 'waypoint', 'https://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js', array('jquery'), '1.6.2', true );
+	wp_enqueue_script( 'counter-js', get_template_directory_uri(). '/apps/js/jquery.counterup.min.js', array(), '1.0', true );
 	wp_enqueue_script( 'main-script', get_template_directory_uri(). '/apps/js/main.js', array(), '1.0.0', true );
+	
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );

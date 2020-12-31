@@ -1,7 +1,9 @@
 /*----------------------------------------------------------------
 # Counter Style
 ----------------------------------------------------------------*/
-.counter{
+.main-counter{
+    margin-bottom: 50px;
+    
     &.curve-bg{
         &:before{
             background: #f5f5f5;
@@ -15,7 +17,7 @@
         letter-spacing: 0.5px;
         text-align: center;
 
-        h2{
+        span{
             color: rgba(26, 26, 26, 0.75);
             font-size: 48px;
             font-weight: bold;

@@ -526,23 +526,24 @@ a img.aligncenter {
 /*----------------------------------------------------------------
 # Counter Style
 ----------------------------------------------------------------*/
-.counter.curve-bg:before {
-  background: #f5f5f5; }
-
-.counter .count {
-  color: #ff7d35;
-  font-size: 14px;
-  font-weight: 600;
-  letter-spacing: 0.5px;
-  text-align: center; }
-  .counter .count h2 {
-    color: rgba(26, 26, 26, 0.75);
-    font-size: 48px;
-    font-weight: bold;
-    line-height: 1;
-    margin: 0; }
-  .counter .count p {
-    margin: 0; }
+.main-counter {
+  margin-bottom: 50px; }
+  .main-counter.curve-bg:before {
+    background: #f5f5f5; }
+  .main-counter .count {
+    color: #ff7d35;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    text-align: center; }
+    .main-counter .count span {
+      color: rgba(26, 26, 26, 0.75);
+      font-size: 48px;
+      font-weight: bold;
+      line-height: 1;
+      margin: 0; }
+    .main-counter .count p {
+      margin: 0; }
 
 /*----------------------------------------------------------------
 # Footer Style
@@ -595,6 +596,7 @@ a img.aligncenter {
   .site-footer .footer-bottom .contact-detail li:before {
     color: #3aa138;
     font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
     left: 0;
     position: absolute;
     top: 0; }
@@ -828,6 +830,23 @@ a img.aligncenter {
     -moz-transform: translateX(-50%);
     -o-transform: translateX(-50%);
     transform: translateX(-50%); }
+
+/*----------------------------------------------------------------
+# Sponser Style
+----------------------------------------------------------------*/
+.sponser a {
+  display: inline-block; }
+  .sponser a:hover img {
+    -webkit-filter: none;
+    filter: none; }
+  .sponser a img {
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out; }
 
 /*----------------------------------------------------------------
 # Tabs Style

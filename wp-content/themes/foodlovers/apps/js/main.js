@@ -24,29 +24,13 @@ function rippleBtn(e) {
 }
 
 /*----------------------------------------------------------------
-# CountUp JS init
+# Counter Jquery init
 ----------------------------------------------------------------*/
-
-const count = document.querySelectorAll('.number');
-
-count.forEach(function(){
-    const arrayInner = count['0', '1', '2', '3'];
-    const countInner = arrayInner.innerHTML;
-    // count.innerHTML = 0;
-
-    let i = 0;
-    const interval = setInterval(function(){
-        const math = Math.floor(Math.random()*(countInner/50));
-        if(i+math <= countInner){
-            i += math;
-            count.innerHTML = i;
-        }else{
-            count.innerHTML = countInner;
-            clearInterval(interval);
-        }
-    }, 5);
-
-    console.log(arrayInner);
+jQuery(document).ready(function ($) {
+    $('.counter').counterUp({
+        delay: 10,
+        time: 1000
+    });
 });
 
 

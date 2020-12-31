@@ -46,32 +46,81 @@ Template Name: About
     </div>
 </section>
 
-<section class="counter curve-bg">
+<section class="main-counter curve-bg">
     <div class="container">
         <div class="row">
             <div class="col-3">
                 <div class="count">
-                    <h2 class="number">1200</h2>
+                    <span class="counter">1200</span>
+                    <span>+</span>
                     <p>Happy Clients</p>
                 </div>
             </div>
             <div class="col-3">
                 <div class="count">
-                    <h2 class="number">500</h2>
+                    <span class="counter">500</span>
+                    <span>+</span>
                     <p>Orders Everyday</p>
                 </div>
             </div>
             <div class="col-3">
                 <div class="count">
-                    <h2 class="number">32</h2>
+                    <span class="counter">32</span>
                     <p>Professionals</p>
                 </div>
             </div>
             <div class="col-3">
                 <div class="count">
-                    <h2 class="number">651</h2>
+                    <span class="counter">651</span>
                     <p>Working Days</p>
                 </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="video content-half">
+    <div class="container">
+        <div class="row align-item-center">
+            <div class="col-4">
+                <div class="content ">
+                        <h2 class="title">You can watch cooking process translation</h2>
+                        <p>Health can be tasty. This is the credo by which our friendly community lives.</p>
+                        <p>We declare a diet, we eat after 6pm and sometimes miss workouts because we just want to relax at home with our family. We free your time from grocery shopping and cooking so that you can do those things that you enjoy.</p>  
+                    </div>
+                    <a href="#" class="main-btn">play video</a>
+                </div>
+            <div class="col-8">
+                <div class="media-wrap">
+                    <img src="<?php echo get_template_directory_uri();?>/apps/img/cooking-demonstration.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="sponser pt-0">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-3">
+                <a href="#">
+                    <img src="<?php echo get_template_directory_uri();?>/apps/img/sponsor1.png" alt="umami">    
+                </a>
+            </div>
+            <div class="col-3">
+                <a href="#">
+                    <img src="<?php echo get_template_directory_uri();?>/apps/img/sponsor2.png" alt="">
+                </a>
+            </div>
+            <div class="col-3">
+                <a href="#">
+                    <img src="<?php echo get_template_directory_uri();?>/apps/img/sponsor3.png" alt="">
+                </a>
+            </div>
+            <div class="col-3">
+                <a href="#">
+                    <img src="<?php echo get_template_directory_uri();?>/apps/img/sponsor4.png" alt="">
+                </a>
             </div>
         </div>
     </div>

@@ -1,0 +1,21 @@
+/*----------------------------------------------------------------
+# Sponser Style
+----------------------------------------------------------------*/
+.sponser{
+    a{
+        display: inline-block;
+        
+        &:hover{
+            img{
+                -webkit-filter: none;
+                        filter: none;
+            }
+        }
+
+        img{
+            -webkit-filter: grayscale(100%);
+                    filter: grayscale(100%);
+            @include transition(all, 0.3s, ease-in-out);
+        }
+    }
+}
