@@ -126,5 +126,7 @@ Template Name: About
     </div>
 </section>
 
+<div class="separator curve-bg"></div>
+
 
 <?php get_footer(); ?>

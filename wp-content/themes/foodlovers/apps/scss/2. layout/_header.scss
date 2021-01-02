@@ -30,12 +30,6 @@
     }
 }
 
-.yellow-head{
-    &:before{
-        background: #ffbe34;
-    }
-}
-
 .page-header{
     .breadcrumb{
         background: transparent;
@@ -43,8 +37,7 @@
 
     .breadcrumb-item {
         font-size: 13px;
-        font-weight: bold;
-
+        
         &+ .breadcrumb-item{
             padding-left: 0.2rem;
 
@@ -72,3 +65,42 @@
         width: auto;
     }
 }
+
+.yellow-head{
+    &:before{
+        background: #ffbe34;
+    }
+}
+
+.blue-head{
+    &:before{
+        background: #33aafe;
+    }
+}
+
+.green-head{
+    &:before{
+        background: #3aa138;
+    }
+}
+
+.blue-head,
+.green-head{
+    .main-title{
+        color: #ffffff;
+    }
+
+    .breadcrumb-item{
+        &+ .breadcrumb-item{
+            &::before{
+                color: #ffffff;
+            }
+        }
+
+        &.active,
+        a{
+            color:#ffffff;
+        }
+    }
+}
+

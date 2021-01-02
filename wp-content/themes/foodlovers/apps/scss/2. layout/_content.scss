@@ -2,37 +2,6 @@
 # Content Style
 ----------------------------------------------------------------*/
 .content-half{
-    .content{
-        .title{
-            text-transform: uppercase;
-        }
-    
-        .title,
-        p{
-            margin-bottom: 1.5rem;
-        }
-
-        ul{
-            list-style: none;
-
-            li{
-                color: #3aa138;
-                margin-bottom: 15px;
-                position: relative;
-                padding-left: 30px;
-
-                &:before{
-                    color: #3aa138;
-                    content: '\f058';
-                    font-family: 'Font Awesome 5 Free';
-                    font-weight: 400;
-                    position: absolute;
-                    left: 0;
-                }
-            }
-        }
-    }
-
     .media-wrap{
         img{
             border-radius: 50px;
@@ -40,8 +9,80 @@
     }
 }
 
+.content{
+    .title{
+        text-transform: uppercase;
+    }
+
+    .title,
+    p{
+        margin-bottom: 1.5rem;
+    }
+
+    ul{
+        list-style: none;
+
+        li{
+            color: #3aa138;
+            margin-bottom: 15px;
+            position: relative;
+            padding-left: 30px;
+
+            &:before{
+                color: #3aa138;
+                content: '\f058';
+                font-family: 'Font Awesome 5 Free';
+                font-weight: 400;
+                position: absolute;
+                left: 0;
+            }
+        }
+    }
+}
+
 .video{
     .media-wrap{
         margin-left: 30px;
+    }
+}
+
+.ration{
+    li{
+        color: rgba(26, 26, 26, 0.75) !important;
+        display: inline-block;
+        margin-right: 20px;
+        padding-left: 22px !important;
+
+        &::before{
+            color: inherit !important;
+            font-weight: 900 !important;
+        }
+
+        &.energy{
+            &:before{
+                content: '\f805';
+            }
+        }
+
+        &.day{
+            &:before{
+                content: '\f073';
+            }
+        }
+    }
+    
+}
+
+.content-wrapper {
+    .tabs{
+        padding-top: 30px;
+
+        .nav{
+            justify-content: flex-start;
+
+            li{
+                margin: 0 45px;
+            }
+        }
     }
 }

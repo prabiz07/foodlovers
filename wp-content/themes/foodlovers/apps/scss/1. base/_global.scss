@@ -135,3 +135,13 @@ a:focus{
     margin-bottom: 35px;
     text-transform: uppercase;
 }
+
+.separator{
+    height: 10px;
+    
+    &.curve-bg{
+        &:before{
+            background: #3aa138;
+        }
+    }
+}

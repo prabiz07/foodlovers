@@ -191,6 +191,11 @@ a:focus {
   margin-bottom: 35px;
   text-transform: uppercase; }
 
+.separator {
+  height: 10px; }
+  .separator.curve-bg:before {
+    background: #3aa138; }
+
 /*----------------------------------------------------------------
 # Main Font
 ----------------------------------------------------------------*/
@@ -495,21 +500,24 @@ a img.aligncenter {
 /*----------------------------------------------------------------
 # Content Style
 ----------------------------------------------------------------*/
-.content-half .content .title {
+.content-half .media-wrap img {
+  border-radius: 50px; }
+
+.content .title {
   text-transform: uppercase; }
 
-.content-half .content .title,
-.content-half .content p {
+.content .title,
+.content p {
   margin-bottom: 1.5rem; }
 
-.content-half .content ul {
+.content ul {
   list-style: none; }
-  .content-half .content ul li {
+  .content ul li {
     color: #3aa138;
     margin-bottom: 15px;
     position: relative;
     padding-left: 30px; }
-    .content-half .content ul li:before {
+    .content ul li:before {
       color: #3aa138;
       content: '\f058';
       font-family: 'Font Awesome 5 Free';
@@ -517,11 +525,28 @@ a img.aligncenter {
       position: absolute;
       left: 0; }
 
-.content-half .media-wrap img {
-  border-radius: 50px; }
-
 .video .media-wrap {
   margin-left: 30px; }
+
+.ration li {
+  color: rgba(26, 26, 26, 0.75) !important;
+  display: inline-block;
+  margin-right: 20px;
+  padding-left: 22px !important; }
+  .ration li::before {
+    color: inherit !important;
+    font-weight: 900 !important; }
+  .ration li.energy:before {
+    content: '\f805'; }
+  .ration li.day:before {
+    content: '\f073'; }
+
+.content-wrapper .tabs {
+  padding-top: 30px; }
+  .content-wrapper .tabs .nav {
+    justify-content: flex-start; }
+    .content-wrapper .tabs .nav li {
+      margin: 0 45px; }
 
 /*----------------------------------------------------------------
 # Counter Style
@@ -664,15 +689,11 @@ a img.aligncenter {
     top: 0;
     width: 91%; }
 
-.yellow-head:before {
-  background: #ffbe34; }
-
 .page-header .breadcrumb {
   background: transparent; }
 
 .page-header .breadcrumb-item {
-  font-size: 13px;
-  font-weight: bold; }
+  font-size: 13px; }
   .page-header .breadcrumb-item + .breadcrumb-item {
     padding-left: 0.2rem; }
     .page-header .breadcrumb-item + .breadcrumb-item::before {
@@ -691,6 +712,29 @@ a img.aligncenter {
   right: 0;
   top: -160px;
   width: auto; }
+
+.yellow-head:before {
+  background: #ffbe34; }
+
+.blue-head:before {
+  background: #33aafe; }
+
+.green-head:before {
+  background: #3aa138; }
+
+.blue-head .main-title,
+.green-head .main-title {
+  color: #ffffff; }
+
+.blue-head .breadcrumb-item + .breadcrumb-item::before,
+.green-head .breadcrumb-item + .breadcrumb-item::before {
+  color: #ffffff; }
+
+.blue-head .breadcrumb-item.active,
+.blue-head .breadcrumb-item a,
+.green-head .breadcrumb-item.active,
+.green-head .breadcrumb-item a {
+  color: #ffffff; }
 
 /*----------------------------------------------------------------
 # Navigation Menu Style
@@ -885,7 +929,8 @@ a img.aligncenter {
         -o-transform: translateX(-50%);
         transform: translateX(-50%); }
       .tabs .nav .nav-item .nav-link i {
-        display: block; }
+        display: block;
+        margin-bottom: 8px; }
 
 .tabs .tab-content {
   background-color: #f5f5f5;
